@@ -26,7 +26,7 @@ public class Arrays_BuySell_10 {
 		 * Find if the smallest value to buy is at the end of the array. If so we can't do any transactions. 
 		 * Else, 
 		 * Store the index of smallest price in an array. this is the best day to buy. 
-		 * Next, find the largest value in the array. 
+		 * Next, find the largest value in the array next to smallest value. 
 		 * Store the index of largest value in the above array. 
 		 * When the largest value is after the smallest value perform the required calculations. 
 		 */
