@@ -6,13 +6,20 @@ public class Arrays_StoreIndex {
 		// Given values are 1,3,7,2,5
 		// Store the index values in an Array when the total of two numbers is 9 
 
-	int num[] = {8,0,9,1,3,7,2,5};
-	System.out.println("Size of array is:" +num.length);
-	//int ind[] = new int[10];
-	//int num[] = {1,3,7,2,5};
-	int ind[] = new int[10];
-
+	//int num[] = {8,0,9,1,3,7,2,5};
+			
+	int num[] = {1,3,7,2,5};
+	//int ind[] = new int[num.length];
+	int [] ind = storeSumindex(num);
+	
+	for (int x:ind)
+		System.out.println(x);
+	}
+	
+	static int[] storeSumindex(int num[])
+	{
 	int result =0;
+	int ind1[] = new int[num.length];
 	int in =0;
 	for(int i=0;i<num.length;i++)
 	{
@@ -21,20 +28,12 @@ public class Arrays_StoreIndex {
 			result = num[i]+num[j];
 			if(result == 9 ) 
 			{
-				ind [in] = i;
-				ind[in+1]= j;
-				in = in+1;
+				ind1[in] = i;
+				ind1[in+1] = j;
+				in = in +2 ;
 			}
 		}
 	}
-	
-	//for(int m:ind)
-	//	System.out.println(m);
-	
-	for(int n=0;n<ind.length;n++)
-	{
-		//if(ind[n]>0)
-			System.out.println(ind[n]);
+	return(ind1);
 	}
-}
 }

@@ -22,7 +22,7 @@ public class implementPower_11 {
 		*/
 		
 		float num = 2.00000f;
-		int exp = -2;
+		int exp = 2;
 		float powervalue = powr(num,exp);
 		System.out.format("Output: %f",powervalue);
 	}
